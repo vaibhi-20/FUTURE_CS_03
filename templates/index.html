@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure File Sharing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #4361ee;
+            --primary-dark: #3a56d4;
+            --background: #f8fafc;
+            --card: #ffffff;
+            --text: #1e293b;
+            --text-light: #64748b;
+            --border: #e2e8f0;
+            --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--background);
+            color: var(--text);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Left background image */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 100%;
+            background: url('https://canto-wp-media.s3.amazonaws.com/app/uploads/2019/09/19192128/secure-file-sharing-26.jpg') no-repeat;
+            background-size: cover;
+            background-position: center;
+            opacity: 1.0; /* Adjust opacity for visibility */
+            z-index: -1;
+        }
+
+        /* Right background image */
+        body::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100%;
+            background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRHSkx_2yoQRoIvfZiQrXG632qeMDL5rHcWA&s') no-repeat;
+            background-size: cover;
+            background-position: center;
+            opacity: 1.0; /* Adjust opacity for visibility */
+            z-index: -1;
+        }
+
+        .container {
+            background: var(--card);
+            width: 100%;
+            max-width: 480px;
+            border-radius: 16px;
+            box-shadow: var(--shadow);
+            overflow: hidden;
+            padding: 0;
+            z-index: 1;
+        }
+
+        .header {
+            background: var(--primary);
+            color: white;
+            padding: 24px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .header p {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 32px;
+        }
+
+        .section {
+            margin-bottom: 32px;
+        }
+
+        .section-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .section-title svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 8px;
+            color: var(--text);
+        }
+
+        input[type="file"],
+        input[type="text"] {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font-size: 14px;
+            transition: border 0.2s;
+        }
+
+        input[type="file"] {
+            padding: 10px;
+        }
+
+        input[type="file"]::file-selector-button {
+            background: var(--background);
+            border: 1px solid var(--border);
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 12px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        input[type="text"]:focus,
+        input[type="file"]:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        button:hover {
+            background: var(--primary-dark);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 16px;
+            border-top: 1px solid var(--border);
+            color: var(--text-light);
+            font-size: 12px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 480px) {
+            .content {
+                padding: 24px;
+            }
+            body::before,
+            body::after {
+                width: 100%; /* Full width on small screens */
+                opacity: 0.3; /* Reduce opacity for better readability */
+            }
+            body::after {
+                display: none; /* Hide the right image on small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <marquee behavior="scroll" direction="left">
+                <h1>Secure File Sharing</h1>
+            </marquee>
+            <p>Encrypt and share files securely</p>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <div class="section-title">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+                    </svg>
+                    Upload & Encrypt
+                </div>
+                <form action="/upload" method="post" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="file">Choose a file</label>
+                        <input type="file" name="file" id="file" required>
+                    </div>
+                    <button type="submit">Encrypt & Upload & download</button>
+                </form>
+            </div>
+
+            <div class="section">
+                <div class="section-title">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                    </svg>
+                    Download & Decrypt
+                </div>
+                <form action="/download" method="post">
+                    <div class="form-group">
+                        <label for="filename">Encrypted filename</label>
+                        <input type="text" name="filename" id="filename" placeholder="e.g., document.txt.enc" required>
+                    </div>
+                    <button type="submit">Decrypt & Download</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer">
+            © 2025 Secure File Sharing | Designed by Vaibhav Malhotra
+        </div>
+    </div>
+</body>
+</html>
