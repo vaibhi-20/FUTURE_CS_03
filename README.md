@@ -24,4 +24,16 @@ using Python.
 
   ---
 
-  
+## 📁 Sample Resources  
+1. PyCryptodome Documentation: https://pycryptodome.readthedocs.io/en/latest/
+2. Node.js Crypto Module: https://nodejs.org/api/crypto.html
+
+---
+
+🎓 Tutorial to Get Started (for Reference)  
+- https://youtu.be/GeiUTkSAJPs?si=B7lvcLwrnrHcPy-k
+  This tutorial covers the basics of file uploads and how to apply AES encryption in a Flask app
+
+---
+
+
