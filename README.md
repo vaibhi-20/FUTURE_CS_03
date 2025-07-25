@@ -31,9 +31,35 @@ using Python.
 ---
 
 🎓 Tutorial to Get Started (for Reference)  
-- https://youtu.be/GeiUTkSAJPs?si=B7lvcLwrnrHcPy-k
+- https://youtu.be/GeiUTkSAJPs?si=B7lvcLwrnrHcPy-k  
   This tutorial covers the basics of file uploads and how to apply AES encryption in a Flask app
 
 ---
 
+## 🔑 Key Features to Include  
+1. Secure file upload and download functionality
+2. AES encryption for all files at rest
+3. Basic encryption key management and security overview
+4. User-friendly interface for file management
+5. Well-documented code and security considerations
+
+---
+
+## Project Structure  
+secure_file_sharing/
+├── app.py                # Flask app + routes  
+├── encryption.py         # AES Encryption & Decryption logic  
+├── templates/  
+│   └── index.html        # Single HTML page for upload files  
+├── uploads/              # Encrypted files  
+├── downloads/            # Decrypted files  
+
+## 📝 Final Deliverables  
+- GitHub repository with clean, commented code
+- Security overview document explaining encryption methods and key handling
+
+---
+
+
+  
 
