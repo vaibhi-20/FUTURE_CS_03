@@ -51,8 +51,7 @@ secure_file_sharing/
 ├── encryption.py         # AES Encryption & Decryption logic  
 ├── templates/  
 │   └── index.html        # Single HTML page for upload files  
-├── uploads/              # Encrypted files  
-├── downloads/            # Decrypted files  
+├── uploads/              # Encrypted files  # Decrypted files  
 
 ## 📝 Final Deliverables  
 - GitHub repository with clean, commented code
