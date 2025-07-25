@@ -15,12 +15,12 @@ using Python.
   https://flask.palletsprojects.com/en/latest/  
 - **PyCryptodome (Python Cryptography Library)** – For AES encryption
   https://pycryptodome.readthedocs.io/en/latest/
-- **HTML / CSS / JavaScript** – Frontend basics
-  Mozilla Developer Network (MDN) Web Docs
-- **Git & GitHub – Version control and collaboration**
-  **GitHub**: https://github.com/
-  **Git**: https://git-scm.com/
-- **VS Code**
+- **HTML / CSS / JavaScript** – Frontend basics  
+  https://developer.mozilla.org/en-US/docs/Web
+- **Git & GitHub – Version control and collaboration**  
+  **GitHub**: https://github.com/  
+  **Git**: https://git-scm.com/  
+- **VS Code**  
 
   ---
 
