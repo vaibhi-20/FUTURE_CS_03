@@ -46,7 +46,7 @@ using Python.
 ---
 
 ## Project Structure  
-secure_file_sharing/
+secure_file_sharing/  
 ├── app.py                # Flask app + routes  
 ├── encryption.py         # AES Encryption & Decryption logic  
 ├── templates/  
