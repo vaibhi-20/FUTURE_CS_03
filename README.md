@@ -10,3 +10,18 @@ using Python.
 
 ---
 
+## 🛠️ Tools You’ll Use (with Links)
+- **Python Flask** – Backend web framework  
+  https://flask.palletsprojects.com/en/latest/  
+- **PyCryptodome (Python Cryptography Library)** – For AES encryption
+  https://pycryptodome.readthedocs.io/en/latest/
+- **HTML / CSS / JavaScript** – Frontend basics
+  Mozilla Developer Network (MDN) Web Docs
+- **Git & GitHub – Version control and collaboration**
+  **GitHub**: https://github.com/
+  **Git**: https://git-scm.com/
+- **VS Code**
+
+  ---
+
+  
