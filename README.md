@@ -22,7 +22,7 @@ using Python.
   **Git**: https://git-scm.com/  
 - **VS Code**  
 
-  ---
+---
 
 ## 📁 Sample Resources  
 1. PyCryptodome Documentation: https://pycryptodome.readthedocs.io/en/latest/
@@ -30,7 +30,7 @@ using Python.
 
 ---
 
-🎓 Tutorial to Get Started (for Reference)  
+## 🎓 Tutorial to Get Started (for Reference)  
 - https://youtu.be/GeiUTkSAJPs?si=B7lvcLwrnrHcPy-k  
   This tutorial covers the basics of file uploads and how to apply AES encryption in a Flask app
 
@@ -52,6 +52,8 @@ secure_file_sharing/
 ├── templates/  
 │   └── index.html        # Single HTML page for upload files  
 ├── uploads/              # Encrypted files  # Decrypted files  
+
+---
 
 ## 📝 Final Deliverables  
 - GitHub repository with clean, commented code
